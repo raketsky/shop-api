@@ -1,0 +1,20 @@
+actor: ApiTester
+modules:
+    enabled:
+        - REST:
+            url: http://localhost/v1/
+            depends: PhpBrowser
+
+
+#class_name: ApiTester
+#modules:
+#    enabled:
+#        - Symfony:
+#            app_path: 'src'
+#            environment: 'test'
+#        - REST:
+#            url: /v1
+#            depends: Symfony
+#        - Doctrine2:
+#            depends: Symfony
+#        #- \Helper\Api

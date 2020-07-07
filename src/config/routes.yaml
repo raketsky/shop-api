@@ -1,0 +1,34 @@
+user:
+    path:       /v1/users/{id<\d+>}
+    controller: App\Controller\UserController::info
+    methods:    GET
+user_create:
+    path:       /v1/users
+    controller: App\Controller\UserController::create
+    methods:    POST
+
+product_create:
+    path:       /v1/products
+    controller: App\Controller\ProductController::create
+    methods:    POST
+products:
+    path:       /v1/users/{userId<\d+>}/products
+    controller: App\Controller\ProductController::listByUser
+    methods:    GET
+
+order_create:
+    path:       /v1/orders
+    controller: App\Controller\OrderController::create
+    methods:    POST
+order:
+    path:       /v1/orders/{orderId<\d+>}
+    controller: App\Controller\OrderController::summary
+    methods:    GET
+order_add_product:
+    path:       /v1/orders/{orderId<\d+>}/products
+    controller: App\Controller\OrderController::addProduct
+    methods:    PUT
+orders:
+    path:       /v1/users/{userId<\d+>}/orders
+    controller: App\Controller\OrderController::listByUser
+    methods:    GET

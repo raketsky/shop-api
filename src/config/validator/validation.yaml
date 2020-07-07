@@ -1,0 +1,7 @@
+App\Entity\Product:
+    properties:
+        type:
+            - Choice:
+                #choices: {callback: [App\Entity\Product, getTypes]}
+                choices: [tshirt, mug]
+                message: only t-shirts and mugs

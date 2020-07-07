@@ -172,7 +172,7 @@
         "version": "2.0.1"
     },
     "php": {
-        "version": "7.4"
+        "version": "7.2"
     },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"
@@ -223,6 +223,9 @@
     },
     "psr/event-dispatcher": {
         "version": "1.0.0"
+    },
+    "psr/http-client": {
+        "version": "1.0.1"
     },
     "psr/http-message": {
         "version": "1.0.1"
@@ -376,9 +379,6 @@
         "version": "v1.0.8"
     },
     "symfony/polyfill-intl-grapheme": {
-        "version": "v1.17.1"
-    },
-    "symfony/polyfill-intl-idn": {
         "version": "v1.17.1"
     },
     "symfony/polyfill-intl-normalizer": {
